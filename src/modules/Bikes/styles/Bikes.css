@@ -1,0 +1,17 @@
+.item-bike,
+.item-bike__block {
+  display: flex;
+  width: 460px;
+}
+
+.item-bike__block {
+  padding: 10px;
+  border: 1px solid var(--black);
+  align-items: center;
+  gap: 40px;
+}
+
+.item-bike__block__image {
+  height: 50px;
+  width: 90px;
+}

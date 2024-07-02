@@ -1,0 +1,41 @@
+.products {
+  height: auto;
+  width: var(--std-size);
+  margin: auto;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* HEADER SERVICE */
+  .products__header {
+    display: flex;
+    gap: 5px;
+    /* DECORATION */
+    .products__header__decoration {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4px;
+      > div {
+        background-color: var(--red);
+        border-radius: 1px;
+        height: 3px;
+        width: 20px;
+      }
+    }
+    /* TITLE */
+    .products__header__title {
+      font-size: 24px;
+    }
+  }
+  /* GRID */
+  .products__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+  }
+}

@@ -1,0 +1,47 @@
+.bike {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: var(--std-size);
+  gap: 20px;
+}
+
+.bike__header {
+  font-size: 24px;
+}
+
+.bike__information {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.bike__information__image {
+  position: relative;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.bike__information__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .descripcion {
+    font-size: 17px;
+  }
+
+  .estado,
+  .cilindrada,
+  .precio {
+    font-weight: 700;
+
+    .bike-activo {
+      color: green;
+    }
+
+    .bike-inactivo {
+      color: var(--red);
+    }
+  }
+}

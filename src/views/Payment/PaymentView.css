@@ -1,0 +1,40 @@
+.payment,
+.user-payment {
+  display: flex;
+  height: auto;
+  width: var(--std-size);
+  margin: auto;
+  gap: 10px;
+}
+
+.payment {
+  gap: 40px;
+}
+
+.user-payment {
+  flex-direction: column;
+}
+.payment__title {
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.payment__title,
+.user-payment__title {
+  font-size: 22px;
+}
+
+.payment__cart {
+  width: 430px;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.user-payment__input {
+  display: grid;
+  width: 430px;
+}

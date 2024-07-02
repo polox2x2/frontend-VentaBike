@@ -1,0 +1,134 @@
+.hero,
+.services,
+.adviser {
+  height: auto;
+  width: var(--std-size);
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+}
+
+.hero {
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 50%;
+    gap: 20px;
+
+    h2 {
+      font-size: 44px;
+    }
+
+    p {
+      font-size: 17px;
+    }
+
+    h2,
+    p {
+      width: 80%;
+    }
+  }
+
+  .hero__image {
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: auto;
+      width: 80%;
+      border-radius: 5px;
+      box-shadow: 5px 5px 5px 0 black;
+    }
+  }
+}
+
+.services,
+.adviser {
+  flex-direction: column;
+  gap: 40px;
+  /* HEADER SERVICE */
+  .services__header,
+  .adviser__header {
+    display: flex;
+    gap: 5px;
+    /* DECORATION */
+    .services__header__decoration,
+    .adviser__header__decoration {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4px;
+      > div {
+        background-color: var(--red);
+        border-radius: 1px;
+        height: 3px;
+        width: 20px;
+      }
+    }
+    /* TITLE */
+    .service__header__title,
+    .adviser__header__title {
+      font-size: 24px;
+    }
+  }
+  /* GRID */
+  .service__grid,
+  .adviser__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+.home-footer {
+  height: 40px;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+}
+
+.home-footer__message {
+  color: white;
+}
+
+/* MEDIA QUERYS*/
+@media (width < 860px) {
+  /* HERO SECTION */
+  .hero {
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 45px;
+
+    .hero__content,
+    .hero__image {
+      width: 100%;
+    }
+
+    .hero__content {
+      h2,
+      p {
+        width: 100%;
+      }
+    }
+
+    .hero__image {
+      img {
+        width: 90%;
+      }
+    }
+  }
+  /* SERVICE SECTION */
+  .services {
+    margin-top: 30px;
+  }
+}
